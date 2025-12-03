@@ -1,0 +1,98 @@
+.footer {
+    background: #000;
+    padding: 3rem 1.5rem;
+    color: #d7d7d7;
+    border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+/* Layout */
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap: 2.5rem;
+    padding: 0 .5rem;
+}
+
+/* Brand Style Matching Navbar */
+.footer-brand {
+    font-size: 1.9rem;
+    margin-bottom: .6rem;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+.cine { color: #e50914; }
+.flow {
+    background: linear-gradient(100deg,#fff,#bfbfbf);
+    background-clip: text;
+    color: transparent;
+}
+
+.footer-tagline {
+    font-size: .92rem;
+    color: #8e8e8e;
+    max-width: 260px;
+}
+
+
+/* Section Headings */
+.footer-section h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+/* Links */
+.footer-links { list-style:none; padding:0; }
+
+.footer-links li { margin-bottom: .45rem; }
+
+.footer-link {
+    color: #8f8f8f;
+    text-decoration: none;
+    font-size: .95rem;
+    transition: .25s ease;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+}
+
+.footer-link:hover {
+    color: #fff;
+    border-bottom: 1px solid #e50914;
+    transform: translateX(4px);
+}
+
+
+/* About text */
+.footer-about {
+    font-size: .92rem;
+    color: #9b9b9b;
+    max-width: 300px;
+    line-height: 1.5rem;
+}
+
+
+/* Bottom Bar */
+.footer-bottom {
+    max-width: 1200px;
+    margin: 2.5rem auto 0;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 1.2rem;
+    text-align: center;
+    font-size: .85rem;
+    color: #777;
+}
+
+
+/* Responsive */
+@media(max-width:768px){
+    .footer {
+        padding: 2rem 1rem;
+    }
+    .footer-brand { font-size: 1.6rem; }
+    .footer-container { gap:1.8rem; }
+}
